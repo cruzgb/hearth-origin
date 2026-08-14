@@ -19,33 +19,67 @@ body{
 }
 
 header{
-    height: 80px;
-    background-color: white;
+    padding: 18px;
+    background-color: #FFFFFE;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
+nav{
+    display: none;
+    margin-left: auto;
+    @media (min-width: 780px) {
+        display: flex;
+    }
+}
+
+nav > ul{
+    display: flex;
+    gap: 10px;
+}
+
+nav li{
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+
 header > img{
-    height: 50px;
+    height: 40px;
 }
 
 header > h1{
-    display: inline-block;
-    margin-left: 10px;
     font-family: 'Playfair Display', serif;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--color-neutral-1);
 }
 
 header > p{
     color: var(--color-primary-2);
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-left: 65px;
+    display: none;
 }
 
-header ul{
-    text-align: right;
+.inicio{
+    background-image: url('../img/hero-v60-pour.png');
+    background-size: cover;
+    background-position: center;
+    color: white;   
+    min-height: 100vh;
 }
 
-header li{
-    display: inline-block;
+.inicio > h2{
+    padding-top: 200px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
 }
