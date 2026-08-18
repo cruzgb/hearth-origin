@@ -14,7 +14,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url('../img/paper-texture-bg.png');
+    background-image: url('../img/paper-texture-bg.webp');
     background-size: cover;
 }
 
@@ -85,7 +85,7 @@ nav a{
 /* Área inicial */
 
 section.inicio{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/hero-v60-pour.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/hero-v60-pour.webp');
     background-size: cover;
     background-position: center center;
     color: white;   
