@@ -98,7 +98,7 @@ section.inicio > h2{
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 auto;
     
     @media (min-width: 780px) {
@@ -113,7 +113,7 @@ section.inicio > p{
     padding-top: 20px;
     text-align: center;
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 430px;
 
     @media (min-width: 780px) {
         max-width: 700px;
@@ -122,6 +122,7 @@ section.inicio > p{
 
 section.inicio > p#slogan2{
     color: var(--color-neutral-1); 
+    max-width: 380px;
 
     @media (min-width: 780px) {
         font-size: 1.4rem;
