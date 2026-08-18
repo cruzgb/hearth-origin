@@ -18,6 +18,8 @@ body{
     background-size: cover;
 }
 
+/* Header */
+
 header{
     padding: 18px;
     background-color: #FFFFFE;
@@ -31,6 +33,30 @@ header{
     z-index: 1000;
 }
 
+header > img{
+    height: 40px;
+}
+
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-neutral-1);
+}
+
+header p{
+    color: var(--color-primary-2);
+    font-size: 0.75rem;
+    display: none;
+    padding-left: 2px;
+
+    @media (min-width: 780px) {
+        display: flex;
+    }
+}
+
+/* Nav */
+
 nav{
     display: none;
     margin-left: auto;
@@ -41,7 +67,8 @@ nav{
 
 nav > ul{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    padding-right: 20px;
 }
 
 nav li{
@@ -49,37 +76,112 @@ nav li{
     font-size: 0.9rem;
 }
 
-
-header > img{
-    height: 40px;
+nav a{
+        text-decoration: none;
+        color: var(--color-neutral-1);
 }
 
-header > h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--color-neutral-1);
-}
+/* Área inicial */
 
-header > p{
-    color: var(--color-primary-2);
-    font-size: 0.8rem;
-    margin-left: 65px;
-    display: none;
-}
-
-.inicio{
-    background-image: url('../img/hero-v60-pour.png');
+section.inicio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/hero-v60-pour.png');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     color: white;   
     min-height: 100vh;
 }
 
-.inicio > h2{
+section.inicio > h2{
     padding-top: 200px;
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    
+    @media (min-width: 780px) {
+        font-size: 3.8rem;
+        padding-top: 300px;
+        max-width: 900px;
+    }
+}
+
+section.inicio > p{
+    font-size: 1.2rem;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 450px;
+
+    @media (min-width: 780px) {
+        max-width: 700px;
+    }
+}
+
+section.inicio > p#slogan2{
+    color: var(--color-neutral-1); 
+
+    @media (min-width: 780px) {
+        font-size: 1.4rem;
+    }
+}
+
+section.inicio > div#button{
+    padding: 16.5px;
+
+    max-width: 250px;
+    margin: 100px auto 0 auto;
+    font-weight: 600;
+    background-color: var(--color-primary-3);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+section.inicio > div#button:hover{
+    transition: 0.5s;
+    scale: 1.01;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px var(--color-primary-3);
+    box-shadow: 0px 2px 8px rgba(66, 66, 66, 0.384);
+}
+
+/* Ficha Técnica */
+
+section.ficha-t{
+    min-height: 100vh;
+}
+
+section.ficha-t > h3{
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Poppins', serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--color-primary-2);
+}
+
+.ficha-t > h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding-top: 10px;
+    color: var(--color-neutral-1);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.ficha-t > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media (min-width: 780px) {
+        justify-content: center;
+        max-width: 700px;
+    }
 }
