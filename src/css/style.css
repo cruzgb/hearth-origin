@@ -122,7 +122,7 @@ section.inicio > p{
 
 section.inicio > p#slogan2{
     color: var(--color-neutral-1); 
-    max-width: 380px;
+    max-width: 350px;
 
     @media (min-width: 780px) {
         font-size: 1.4rem;
