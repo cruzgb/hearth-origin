@@ -236,3 +236,51 @@ div#ficha   {
 .tabela2{
     border-left: 2px solid var(--color-primary-1);
 }
+
+/* Origem */
+
+section.origem{
+    min-height: 100vh;
+}
+
+.o-container{
+    align-items: center;
+    gap: 20px;
+    display: flex;
+}
+
+.origem img{
+    height: 10vh;
+    align-items: center;
+}
+
+.o-content{
+    text-align: center;
+    max-width: 300px;
+    flex-direction: row;
+
+    @media (min-width: 900px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.origem h3, h2, p{
+    text-align: center;
+}
+
+.origem h3{
+    color: var(--color-primary-2);
+    font-family: 'Poppins' sans-serif;
+}
+
+.origem h2{
+    color: var(--color-neutral-1);
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.origem p{
+    color: var(--color-neutral-1);
+    font-family: 'Poppins', sans-serif;
+}
