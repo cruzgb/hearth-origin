@@ -241,6 +241,12 @@ div#ficha   {
 
 section.origem{
     min-height: 100vh;
+    margin-bottom: 100px;
+
+    @media (min-width: 900px){
+        margin-bottom: 0px;
+    }
+
 }
 
 .o-container{
@@ -253,12 +259,20 @@ section.origem{
     @media (min-width: 900px){
         display: flex;
         flex-direction: row;
+        margin: 0 auto;
+        max-width: 700px;
     }
 }
 
 .origem img{
-    height: 250px;
+    margin-top: 250px;
+    height: 35vh;
     align-items: center;
+    border-radius: 10px;
+
+        @media (min-width: 900px){
+            margin: 0 auto;
+    }
 }
 
 .o-content{
@@ -266,22 +280,36 @@ section.origem{
     max-width: 300px;
 }
 
-.origem h3, h2, p{
-    text-align: center;
-}
-
 .origem h3{
     color: var(--color-primary-2);
     font-family: 'Poppins' sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+
+    @media (min-width: 900px){
+        font-size: ;
+    }
 }
 
 .origem h2{
     color: var(--color-neutral-1);
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    @media (min-width: 900px){
+    font-size: 2.25rem;
+    }
 }
 
 .origem p{
     color: var(--color-neutral-1);
     font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 0.8rem;
+
+    @media (min-width: 900px){
+    font-size: 0.9rem;
+    }
 }
