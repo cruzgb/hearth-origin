@@ -6,6 +6,10 @@
 
 @import url(../css/variables.css);
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +20,10 @@ body{
     font-family: 'Poppins', sans-serif;
     background-image: url('../img/paper-texture-bg.webp');
     background-size: cover;
+}
+
+section{
+    scroll-margin-top: 240px;
 }
 
 /* Header */
@@ -140,6 +148,13 @@ section.inicio > div#button{
     border-radius: 10px;
     text-align: center;
     font-size: 1.15rem;
+
+    @media (min-width: 780px){
+        margin-top: 20px;
+    }
+    @media (min-width: 900px){
+        margin-top: 100px;
+    }
 }
 
 section.inicio > div#button:hover{
@@ -242,6 +257,7 @@ div#ficha   {
 section.origem{
     min-height: 100vh;
     margin-bottom: 100px;
+    margin-top: 100px;
 
     @media (min-width: 900px){
         margin-bottom: 0px;
@@ -249,29 +265,44 @@ section.origem{
 
 }
 
+div.divider-copper{
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--color-primary-3),
+        transparent
+    );
+
+    margin: 5vh;
+}
+
 .o-container{
     align-items: center;
     gap: 20px;
     display: flex;
     flex-direction: column;
-
     
-    @media (min-width: 900px){
+    @media (min-width: 780px){
         display: flex;
         flex-direction: row;
         margin: 0 auto;
         max-width: 700px;
     }
+    @media (min-width: 1080px){
+        max-width: 900px;
+    }
 }
 
 .origem img{
-    margin-top: 250px;
-    height: 35vh;
+    width: 70vw;
     align-items: center;
     border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(97, 97, 97, 0.5);
 
-        @media (min-width: 900px){
+        @media (min-width: 780px){
             margin: 0 auto;
+            width: 25vw;
     }
 }
 
@@ -280,25 +311,21 @@ section.origem{
     max-width: 300px;
 }
 
-.origem h3{
+.origem h3, .receita h3{
     color: var(--color-primary-2);
     font-family: 'Poppins' sans-serif;
     font-size: 0.8rem;
     letter-spacing: 2px;
-
-    @media (min-width: 900px){
-        font-size: ;
-    }
 }
 
-.origem h2{
+.origem h2, .receita h2{
     color: var(--color-neutral-1);
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     padding-top: 15px;
     padding-bottom: 20px;
 
-    @media (min-width: 900px){
+    @media (min-width: 1080px){
     font-size: 2.25rem;
     }
 }
@@ -307,9 +334,24 @@ section.origem{
     color: var(--color-neutral-1);
     font-family: 'Poppins', sans-serif;
     text-align: justify;
-    font-size: 0.8rem;
-
-    @media (min-width: 900px){
     font-size: 0.9rem;
+
+    @media (min-width: 1080px){
+    font-size: 1rem;
     }
+}
+
+/* Receita */
+
+.receita{
+    min-height: 100vh;
+}
+
+.receita h3, .receita h2{
+    text-align: center;
+}
+
+.receita p{
+    text-align: center;
+    color: var(--color-neutral-1);
 }
